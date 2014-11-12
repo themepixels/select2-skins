@@ -1,0 +1,100 @@
+/*!
+* select2-skins
+* Released under MIT. Copyright 2014 Mienard Lumaad
+* http://ui.themepixels.com/select2-skins
+*
+* Github Repository: https://github.com/themepixels/select2-skins
+*
+*/
+.tpx-select2-container {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.tpx-select2-container .select2-choice {
+  height: 34px;
+  background-image: none;
+  border-radius: 3px;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.tpx-select2-container .select2-choice > .select2-chosen {
+  line-height: 30px;
+  font-size: 14px;
+}
+.tpx-select2-container .select2-choice .select2-arrow {
+  background-image: none;
+  background-color: #fff;
+  width: 30px;
+  border-left-color: rgba(0, 0, 0, 0.2);
+}
+.tpx-select2-container .select2-choice .select2-arrow b {
+  display: none;
+}
+.tpx-select2-container .select2-choice .select2-arrow:before {
+  position: absolute;
+  width: 28px;
+  content: '\f078';
+  font-family: 'FontAwesome';
+  font-size: 12px;
+  text-align: center;
+  line-height: 32px;
+  opacity: .5;
+}
+.tpx-select2-container.select2-dropdown-open .select2-choice {
+  background-color: #fff;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.tpx-select2-container.select2-dropdown-open .select2-choice .select2-arrow {
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+.tpx-select2-container.select2-dropdown-open .select2-choice .select2-arrow:before {
+  content: '\f077';
+  opacity: .7;
+}
+.tpx-select2-container.select2-dropdown-open.select2-container-active .select2-choice {
+  box-shadow: none;
+}
+.tpx-select2-container.select2-container-active .select2-choice {
+  border-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.tpx-select2-container .select2-drop-active {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+.tpx-select2-drop {
+  border-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.tpx-select2-drop .select2-search {
+  padding-top: 5px;
+  position: relative;
+}
+.tpx-select2-drop .select2-search input {
+  background-color: #fff;
+  background-image: none;
+  border-color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  padding: 7px 20px 7px 5px;
+}
+.tpx-select2-drop .select2-search:after {
+  position: absolute;
+  font-family: 'FontAwesome';
+  content: '\f002';
+  top: 12px;
+  right: 12px;
+  font-size: 15px;
+  opacity: .5;
+}
+.tpx-select2-drop .select2-results {
+  font-size: 14px;
+}
+.tpx-select2-drop .select2-results li {
+  line-height: 1.42857;
+}
+.tpx-select2-drop .select2-results .select2-highlighted {
+  background-color: #428bca;
+  border-radius: 2px;
+}
+.tpx-select2-drop .select2-results .select2-result-label {
+  padding: 4px 7px 4px;
+}

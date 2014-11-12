@@ -1,0 +1,30 @@
+{
+  "name": "select2-skins",
+  "version": "1.0.0",
+  "homepage": "https://github.com/themepixels/select2-skins",
+  "authors": [
+    "ThemePixels <themepixels@gmail.com>"
+  ],
+  "description": "A css skins for select2 with sizes and colors.",
+  "main": "select2-skins.min.css",
+  "keywords": [
+    "select2",
+    "dropdown",
+    "form"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "select2": "~3.5.2",
+    "bootstrap": "~3.3.0"
+  },
+  "dependencies": {
+    "fontawesome": "~4.2.0"
+  }
+}

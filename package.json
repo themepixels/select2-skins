@@ -1,0 +1,32 @@
+{
+  "name": "select2-skins",
+  "version": "1.0.0",
+  "description": "A css skins for select2 with sizes and colors.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/themepixels/select2-skins.git"
+  },
+  "keywords": [
+    "select2",
+    "form",
+    "dropdown"
+  ],
+  "author": "ThemePixels",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/themepixels/select2-skins/issues"
+  },
+  "homepage": "https://github.com/themepixels/select2-skins",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-less": "^0.11.4",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-ssh": "^0.12.0",
+    "load-grunt-tasks": "^0.6.0"
+  }
+}

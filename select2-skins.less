@@ -1,0 +1,142 @@
+/*!
+* select2-skins
+* Released under MIT. Copyright 2014 Mienard Lumaad
+* http://ui.themepixels.com/select2-skins
+*
+* Github Repository: https://github.com/themepixels/select2-skins
+*
+*/
+
+// Variables
+@font-size-base:              14px;
+@font-family-base:            'Helvetica Neue',Helvetica,Arial,sans-serif;
+@border-color-base:           fadeout(#000,80%);
+@border-color-active-base:    fadeout(#000,70%);
+@color-highlight-base:        #428BCA;
+
+@font-icon:                   'FontAwesome';
+@font-arrow-down:             '\f078';
+@font-arrow-up:               '\f077';
+@icon-size:                   12px;
+
+@arrow-wrapper-width:         30px;
+
+
+
+.tpx-select2-container {
+
+  font-family: @font-family-base;
+
+  .select2-choice {
+    height: 34px;
+    background-image: none;
+    border-radius: 3px;
+    border-color: @border-color-base;
+
+    > .select2-chosen {
+      line-height: 30px;
+      font-size: @font-size-base;
+    }
+
+    .select2-arrow {
+      background-image: none;
+      background-color: #fff;
+      width: @arrow-wrapper-width;
+      border-left-color: @border-color-base;
+
+      b {
+        display: none;
+      }
+
+      &:before {
+        position: absolute;
+        width: @arrow-wrapper-width - 2;
+        content: @font-arrow-down;
+        font-family: @font-icon;
+        font-size: @icon-size;
+        text-align: center;
+        line-height: 32px;
+        opacity: .5;
+      }
+    }
+  }
+
+  // dropdown opens
+  &.select2-dropdown-open {
+    .select2-choice {
+      background-color: #fff;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      .select2-arrow {
+        border-left: 1px solid @border-color-base;
+
+        &:before {
+          content: @font-arrow-up;
+          opacity: .7;
+        }
+      }
+    }
+
+    &.select2-container-active .select2-choice {
+      box-shadow: none;
+    }
+  }
+
+  // when container is active
+  &.select2-container-active {
+    .select2-choice {
+      border-color: @border-color-active-base;
+      box-shadow: 0 0 3px rgba(0,0,0,.2);
+    }
+  }
+
+  .select2-drop-active {
+    border-color: @border-color-active-base;
+  }
+}
+
+.tpx-select2-drop {
+  border-color: @border-color-active-base;
+  box-shadow: 0 3px 3px rgba(0,0,0,.15);
+  border-top: 1px solid @border-color-active-base;
+
+  .select2-search {
+    padding-top: 5px;
+    position: relative;
+
+    input {
+      background-color: #fff;
+      background-image: none;
+      border-color: @border-color-active-base;
+      font-size: @font-size-base;
+      padding: 7px 20px 7px 5px;
+    }
+
+    &:after {
+      position: absolute;
+      font-family: @font-icon;
+      content: '\f002';
+      top: 12px;
+      right: 12px;
+      font-size: 15px;
+      opacity: .5;
+    }
+  }
+
+  .select2-results {
+    font-size: @font-size-base;
+
+    li {
+      line-height: 1.42857;
+    }
+
+    .select2-highlighted {
+      background-color: @color-highlight-base;
+      border-radius: 2px;
+    }
+
+    .select2-result-label {
+      padding: 4px 7px 4px;
+    }
+  }
+}
