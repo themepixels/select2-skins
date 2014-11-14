@@ -23,3 +23,8 @@ body {
   margin: 0;
   color: #666;
 }
+
+h5 {
+  margin-bottom: 10px;
+  font-weight: normal;
+}
