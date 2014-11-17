@@ -150,7 +150,7 @@
       </optgroup>
     </select>
 
-    <br><br>
+    <!-- <br><br>
     <h4 class="sel-label">Large Sized Select</h4>
 
     <select style="width:300px" id="large" data-placeholder="Choose one">
@@ -215,7 +215,7 @@
     <br><br>
     <h4 class="sel-label">Small Sized Select</h4>
 
-    <select style="width:300px" id="small" data-placeholder="Choose one" disabled>
+    <select style="width:200px" id="small" data-placeholder="Choose one">
       <option></option>
       <optgroup label="Alaskan/Hawaiian Time Zone">
         <option value="AK">Alaska</option>
@@ -272,7 +272,7 @@
         <option value="VT">Vermont</option><option value="VA">Virginia</option>
         <option value="WV">West Virginia</option>
       </optgroup>
-    </select>
+    </select> -->
 
   </div>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -282,21 +282,21 @@ $(function() {
 
   // Default
   $('#basic, #multiple').select2({
-    containerCssClass: 'tpx-select2-container',
+    containerCssClass: 'tpx-select2-container select2-error',
     dropdownCssClass: 'tpx-select2-drop'
   });
 
   // Large
-  $('#large').select2({
-    containerCssClass: 'tpx-select2-container select2-container-lg',
-    dropdownCssClass: 'tpx-select2-drop'
-  });
+  // $('#large').select2({
+  //   containerCssClass: 'tpx-select2-container select2-container-lg',
+  //   dropdownCssClass: 'tpx-select2-drop'
+  // });
 
   // Small
-  $('#small').select2({
-    containerCssClass: 'tpx-select2-container select2-container-sm',
-    dropdownCssClass: 'tpx-select2-drop select2-drop-sm'
-  });
+  // $('#small').select2({
+  //   containerCssClass: 'tpx-select2-container select2-container-sm',
+  //   dropdownCssClass: 'tpx-select2-drop select2-drop-sm'
+  // });
 
 });
 </script>

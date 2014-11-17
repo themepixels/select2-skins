@@ -18,6 +18,7 @@
 .tpx-select2-container .select2-choice > .select2-chosen {
   line-height: 30px;
   font-size: 14px;
+  margin-right: 34px;
 }
 .tpx-select2-container .select2-choice .select2-arrow {
   background-image: none;
@@ -104,6 +105,22 @@
 }
 .tpx-select2-container .select2-search-choice-close {
   top: 5px;
+}
+.tpx-select2-container.select2-error .select2-choice,
+.tpx-select2-container.select2-error .select2-choices {
+  border-color: #cc0000;
+}
+.tpx-select2-container.select2-error .select2-choice > .select2-chosen {
+  color: #cc0000;
+}
+.tpx-select2-container.select2-error .select2-choices .select2-search-field input {
+  color: #cc0000;
+}
+.tpx-select2-container.select2-error .select2-arrow {
+  border-left-color: #cc0000;
+}
+.tpx-select2-container.select2-error .select2-arrow:before {
+  color: #cc0000;
 }
 .tpx-select2-drop {
   border-color: rgba(0, 0, 0, 0.3);

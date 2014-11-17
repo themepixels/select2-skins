@@ -13,6 +13,7 @@
 @border-color-base:           fadeout(#000,80%);
 @border-color-active-base:    fadeout(#000,70%);
 @color-highlight-base:        #428BCA;
+@error-color:                 #cc0000;
 
 @font-icon:                   'FontAwesome';
 @font-arrow-down:             '\f078';
@@ -36,6 +37,7 @@
     > .select2-chosen {
       line-height: 30px;
       font-size: @font-size-base;
+      margin-right: 34px;
     }
 
     .select2-arrow {
@@ -152,6 +154,30 @@
 
   .select2-search-choice-close {
     top: 5px;
+  }
+
+  // Validation States
+  &.select2-error {
+    .select2-choice,
+    .select2-choices {
+      border-color: @error-color;
+    }
+
+    .select2-choice > .select2-chosen {
+      color: @error-color;
+    }
+
+    .select2-choices .select2-search-field input {
+      color: @error-color;
+    }
+
+    .select2-arrow {
+      border-left-color: @error-color;
+
+      &:before {
+        color: @error-color;
+      }
+    }
   }
 }
 
