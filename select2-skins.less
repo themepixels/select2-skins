@@ -26,6 +26,50 @@
 @arrow-wrapper-width:         30px;
 
 
+// Mixins
+// Creates Skin Variants
+.skin-variant(
+
+  @skin-class,
+  @border-width:            1px,
+  @border-color:            @border-color-base,
+  @bgcolor:                 #fff,
+  @color:                   #333,
+  @border-width-drop:       1px,
+  @border-color-drop:       @border-color-base,
+  @bgcolor-drop:            #fff,
+  @color-drop:              #333,
+  @bgcolor-highlight:       @color-highlight-base,
+  @color-highlight:         #fff
+
+) {
+
+  .tpx-select2-container {
+    &.@{skin-class} {
+      .select2-choice {
+        border-width: @border-width;
+        border-color: @border-color;
+        background-color: @bgcolor;
+        color: @color;
+
+        .select2-arrow {
+          border-left-color: @border-color;
+          border-left-width: @border-width;
+          background-color: @bgcolor;
+        }
+      }
+
+      &.select2-container-multi {
+        .select2-choices {
+          border-width: @border-width;
+        }
+      }
+    }
+  }
+
+}
+
+
 
 .tpx-select2-container {
 
@@ -145,8 +189,10 @@
       .select2-choices {
         box-shadow: 0 0 3px rgba(0,0,0,.2);
         border-color: @border-color-active-base;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+      }
+
+      &.select2-dropdown-open .select2-choices {
+        border-radius: 3px 3px 0 0;
       }
 
       &.select2-drop-above .select2-choices {
@@ -157,67 +203,6 @@
 
   .select2-search-choice-close {
     top: 5px;
-  }
-
-  // Validation States
-  // Error States
-  &.select2-error {
-    .select2-choice,
-    .select2-choices {
-      border-color: @error-color;
-    }
-
-    .select2-arrow {
-      border-left-color: @error-color;
-
-      &:before {
-        color: @error-color;
-      }
-    }
-
-    &.select2-dropdown-open .select2-choice .select2-arrow {
-      border-left-color: @error-color;
-    }
-  }
-
-  // Success States
-  &.select2-success {
-    .select2-choice,
-    .select2-choices {
-      border-color: @success-color;
-    }
-
-    .select2-arrow {
-      border-left-color: @success-color;
-
-      &:before {
-        color: @success-color;
-      }
-    }
-
-    &.select2-dropdown-open .select2-choice .select2-arrow {
-      border-left-color: @success-color;
-    }
-  }
-
-  // Warning States
-  &.select2-warning {
-    .select2-choice,
-    .select2-choices {
-      border-color: @warning-color;
-    }
-
-    .select2-arrow {
-      border-left-color: @warning-color;
-
-      &:before {
-        color: @warning-color;
-      }
-    }
-
-    &.select2-dropdown-open .select2-choice .select2-arrow {
-      border-left-color: @warning-color;
-    }
   }
 }
 
@@ -384,3 +369,11 @@
     font-size: @font-size-base - 2;
   }
 }
+
+
+// Validation States
+.skin-variant(select2-error, @border-color: @error-color);
+.skin-variant(select2-success, @border-color: @success-color);
+.skin-variant(select2-warning, @border-color: @warning-color);
+
+// Custom Skins

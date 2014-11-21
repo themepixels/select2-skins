@@ -12,10 +12,7 @@ body {
 .tpx-mainpanel {
   margin: 20px auto;
   width: 720px;
-  border: 1px solid #ddd;
-  padding: 40px;
   color: #333;
-  background-color: #eee;
 }
 
 .tpx-title { margin: 0 0 10px; }
