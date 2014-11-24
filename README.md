@@ -11,7 +11,7 @@ A css skins for select2 with sizes and colors.
 
 ## How to use
 
-If you are using Select2 as a replacement for select boxes, what you need to do is add the select2 css together with the select2 skins css in the <head> of your page. See code below.
+If you are using Select2 as a replacement for select boxes, what you need to do is add the select2 css together with the select2 skins css in the &lt;head&gt; of your page. See code below.
 
 ```
 <link rel="stylesheet" href="select2.css">
