@@ -6,9 +6,22 @@ A css skins for select2 with sizes and colors.
 ## Prerequisites
 
 * [Select2] (https://github.com/ivaynberg/select2)
-- [FontAwesome] (https://github.com/FortAwesome/Font-Awesome)
+* [FontAwesome] (https://github.com/FortAwesome/Font-Awesome)
 
 
 ## How to use
 
-If you are using Select2 as a replacement for select boxes, you should add this to create an even more fancy select boxes.
+If you are using Select2 as a replacement for select boxes, what you need to do is add the select2 css together with the select2 skins css in the <head> of your page. See code below.
+
+```
+<link rel="stylesheet" href="select2.css">
+<link rel="stylesheet" href="select2-skins.css">
+```
+
+Select2-Skins also uses FontAwesome for the arrow icon so you also need to include it in the &lt;head&gt; of your page.
+
+```
+<link rel="stylesheet" href="font-awesome.min.css">
+```
+
+### [View Demo and Documentation] (http://ui.themepixels.com/select2-skins)
