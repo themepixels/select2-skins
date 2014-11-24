@@ -141,6 +141,22 @@ hr {
   }
 }
 
+.btn-wrapper { display: inline-block; }
+.btn-wrapper small { display: block; }
+
+@media screen and (max-width: 480px) {
+  .btn-wrapper {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .btn-wrapper a {
+    display: block;
+    text-align: center;
+  }
+}
+
 .tpx-desc {
   font-weight: 200;
   font-size: 20px;

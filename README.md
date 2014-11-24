@@ -25,3 +25,8 @@ Select2-Skins also uses FontAwesome for the arrow icon so you also need to inclu
 ```
 
 ### [View Demo and Documentation] (http://ui.themepixels.com/select2-skins)
+
+
+## Copyright and license
+
+Code and documentation copyright 2014 ThemePixels.com. Code released under [the MIT license](LICENSE).
