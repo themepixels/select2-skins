@@ -3,7 +3,7 @@ Select2 Skins
 
 A css skins for select2 with sizes and colors.
 
-## Prerequisites
+## Dependencies
 
 * [Select2] (https://github.com/ivaynberg/select2)
 * [FontAwesome] (https://github.com/FortAwesome/Font-Awesome)
