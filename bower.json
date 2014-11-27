@@ -6,7 +6,7 @@
     "ThemePixels <themepixels@gmail.com>"
   ],
   "description": "A css skins for select2 with sizes and colors.",
-  "main": ["select2-skins.less","select2-skins.css"],
+  "main": "select2-skins.css",
   "keywords": [
     "select2",
     "dropdown",
