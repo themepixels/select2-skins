@@ -24,7 +24,6 @@
     "bootstrap": "~3.3.0"
   },
   "dependencies": {
-    "select2": "~3.5.2",
     "fontawesome": "~4.2.0"
   }
 }
