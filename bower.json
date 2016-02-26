@@ -1,9 +1,10 @@
 {
   "name": "select2-skins",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "homepage": "https://github.com/themepixels/select2-skins",
   "authors": [
-    "ThemePixels <themepixels@gmail.com>"
+    "ThemePixels <themepixels@gmail.com>",
+    "Prashant Sinha <prashant@ducic.ac.in>",
   ],
   "description": "A css skins for select2 with sizes and colors.",
   "main": "select2-skins.css",
@@ -21,9 +22,10 @@
     "tests"
   ],
   "devDependencies": {
-    "bootstrap": "~3.3.0"
+    "bootstrap": "~3.3.0",
+    "select2": "~4.0.1",
+    "font-awesome": "~4.5.0"
   },
   "dependencies": {
-    "fontawesome": "~4.2.0"
   }
 }

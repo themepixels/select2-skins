@@ -1,6 +1,6 @@
 {
   "name": "select2-skins",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "A css skins for select2 with sizes and colors.",
   "main": "index.js",
   "scripts": {
