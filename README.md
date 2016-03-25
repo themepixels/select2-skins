@@ -1,7 +1,7 @@
 Select2 Skins
 =============
 
-A css skins for select2 with sizes and colors.
+A css skins for select2 version: 3.5.2 with sizes and colors.
 
 ## Dependencies
 
