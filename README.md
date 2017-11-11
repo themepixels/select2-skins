@@ -24,7 +24,7 @@ Select2-Skins also uses FontAwesome for the arrow icon so you also need to inclu
 <link rel="stylesheet" href="font-awesome.min.css">
 ```
 
-### [View Demo and Documentation] (http://ui.themepixels.com/select2-skins)
+### [View Demo and Documentation] (http://themepixels.me/github/select2-skins)
 
 
 ## Copyright and license
